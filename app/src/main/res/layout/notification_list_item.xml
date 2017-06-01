@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/profile"
+        app:civ_border_width="2dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginLeft="20dp"
+        app:civ_border_color="#406280"
+        android:layout_marginStart="14dp"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gaurav Geet"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:id="@+id/textView_listItem_name"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/profile_image"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_listItem_flatNo"
+        android:text="A110"
+        android:layout_below="@+id/textView_listItem_name"
+        android:layout_alignStart="@+id/textView_listItem_name" />
+
+
+</RelativeLayout>

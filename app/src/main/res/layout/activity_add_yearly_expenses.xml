@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_monthly_expense"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gaurav_pc.societytemplate.AddMonthlyExpense">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Add Expenses"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:text="Here you can add your annual expenses" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/editText_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/shopping_cart_30"
+                android:hint="Item Name"
+                android:inputType="textPersonName"
+                android:paddingBottom="10dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/editText_cost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText_item_name"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/rupee_30"
+                android:hint="Per Unit Cost"
+                android:paddingBottom="10dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/editText_item_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText_cost"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/quantity_30"
+                android:hint="Quantity"
+                android:inputType="number"
+                android:paddingBottom="10dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/editText_item_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText_item_quantity"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/description_30"
+                android:hint="Description"
+                android:inputType="textMultiLine"
+                android:paddingBottom="10dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView_totalCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText_item_desc"
+                android:text="Total:"
+                android:textStyle="normal"
+                android:textSize="25sp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_total_Cost"
+                android:layout_toEndOf="@+id/ImageView_total_cost"
+                android:layout_below="@+id/editText_item_desc"
+                android:text="1525"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="28sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ImageView_total_cost"
+                android:layout_below="@+id/editText_item_desc"
+                android:layout_toEndOf="@+id/textView_totalCost"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/rupee_30"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:text="Add Expense"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/button"
+                android:layout_below="@+id/textView_total_Cost"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="40dp"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#fff" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

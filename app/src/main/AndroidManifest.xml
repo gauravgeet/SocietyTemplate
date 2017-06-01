@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gaurav_pc.societytemplate">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/CustomTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Chairman.ChairmanDashboard"
+            android:label="@string/title_activity_chairman_dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Login"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name=".ResetPassword"
+            android:label="Reset Password" />
+        <activity android:name=".Signup" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AddMonthlyExpense" />
+        <activity
+            android:name=".ChairmanNotifications"
+            android:label="@string/title_activity_chairman_notifications"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".NewEvent" />
+        <activity android:name=".NewMeeting" />
+        <activity android:name=".NewExpense" />
+        <activity
+            android:name=".Reports"
+            android:label="@string/title_activity_reports"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AddYearlyExpenses" />
+        <activity android:name=".AddEventExpenses" />
+        <activity android:name=".Complaints" />
+        <activity android:name=".NewComplaint" />
+        <activity android:name=".DetailedComplaint" />
+        <activity android:name=".ComplaintReplyActivity" />
+        <activity
+            android:name=".GeneralSetting"
+            android:label="General Settings" />
+        <activity android:name=".PendingRequests" />
+        <activity
+            android:name=".Alerts"
+            android:label="@string/title_activity_alerts"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OpinionPolls"
+            android:label="Opinion Poll" />
+        <activity android:name=".NewOpinionPolls" />
+        <activity android:name=".ProfileActivity">
+
+        </activity>
+    </application>
+
+</manifest>

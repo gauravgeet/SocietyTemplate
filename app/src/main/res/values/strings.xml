@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SocietyTemplate</string>
+    <string name="title_activity_chairman_dashboard">ChairmanDashboard</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="spinner_name">Membership Type</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_accounts">Accounts</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_main">Accounts</string>
+    <string name="title_activity_chairman_notifications">Notifications</string>
+    <string name="title_activity_meeting_notifications">Meeting Notifications</string>
+    <string name="title_activity_reports">Reports</string>
+    <string name="title_activity_alerts">Alerts</string>
+</resources>

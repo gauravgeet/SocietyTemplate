@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_meeting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="40dp"
+    android:layout_marginLeft="40dp"
+    tools:context="com.example.gaurav_pc.societytemplate.NewMeeting">
+
+
+    <TextView
+        android:text="Register Your Complaint Here!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView_ComplaintHeading"
+        android:textStyle="bold"
+        android:textSize="22sp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_complaints"
+        android:layout_below="@+id/editText_ComplaintDesc"
+        android:layout_marginTop="20dp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:textAlignment="center"
+        android:hint="Description"
+        android:ems="10"
+        android:layout_below="@+id/editText_ComplaintSubject"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:id="@+id/editText_ComplaintDesc"
+        android:background="@drawable/custom_edittext"
+        android:paddingBottom="5dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:hint="Complaints Subject"
+        android:ems="10"
+        android:layout_below="@+id/textView_ComplaintHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:id="@+id/editText_ComplaintSubject"
+        android:background="@drawable/custom_edittext"
+        android:paddingBottom="5dp"/>
+
+    <Button
+        android:text="Send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:id="@+id/btnSend"
+        android:layout_below="@+id/spinner_complaints"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"/>
+
+
+</RelativeLayout>

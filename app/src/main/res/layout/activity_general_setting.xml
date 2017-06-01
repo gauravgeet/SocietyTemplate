@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_general_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gaurav_pc.societytemplate.GeneralSetting">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/label_maintenance"
+            android:text="Maintenance"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGrp_maintenance"
+            android:layout_below="@+id/label_maintenance"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monthly"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:buttonTint="@color/colorPrimary"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:text="Yearly"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:buttonTint="@color/colorPrimary"/>
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_maintenance_amount"
+            android:layout_below="@+id/radioGrp_maintenance"
+            android:hint="Set Maintenance Amount.."
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/custom_edittext"
+            android:layout_marginRight="50dp"
+            android:textSize="16sp"
+            android:paddingLeft="3dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_maintenance_date"
+            android:layout_below="@+id/editText_maintenance_amount"
+            android:hint="Set Maintenance Due Date"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/custom_edittext"
+            android:layout_marginRight="50dp"
+            android:textSize="16sp"
+            android:paddingLeft="3dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_maintenance_fine"
+            android:layout_below="@+id/editText_maintenance_date"
+            android:hint="Set Fine Amount"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/custom_edittext"
+            android:layout_marginRight="50dp"
+            android:textSize="16sp"
+            android:paddingLeft="3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/label_committee"
+            android:text="Committee"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp"
+            android:layout_below="@+id/editText_maintenance_fine"/>
+
+        <View
+            android:id="@+id/view_committee"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/editText_maintenance_fine"
+            android:layout_marginTop="42dp"
+            android:background="#c0c0c0"
+            android:layout_toEndOf="@+id/label_committee"
+            android:layout_marginLeft="5dp"/>
+
+        <Spinner
+            android:id="@+id/spinner_chairman"
+            android:spinnerMode="dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/view_committee"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="50dp" />
+
+        <Spinner
+            android:id="@+id/spinner_Secretory"
+            android:spinnerMode="dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/spinner_chairman"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="50dp" />
+
+        <Spinner
+            android:id="@+id/spinner_Treasurer"
+            android:spinnerMode="dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/spinner_Secretory"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/label_About_socirty"
+            android:text="Society Account Details"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp"
+            android:layout_below="@+id/spinner_Treasurer"/>
+
+        <View
+            android:id="@+id/view_society"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/spinner_Treasurer"
+            android:layout_marginTop="42dp"
+            android:background="#c0c0c0"
+            android:layout_toEndOf="@+id/label_About_socirty"
+            android:layout_marginLeft="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_account_name"
+            android:layout_below="@+id/view_society"
+            android:hint="Account Name"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/custom_edittext"
+            android:layout_marginRight="50dp"
+            android:textSize="16sp"
+            android:paddingLeft="3dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_account_no"
+            android:layout_below="@+id/editText_account_name"
+            android:hint="Account Number"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/custom_edittext"
+            android:layout_marginRight="50dp"
+            android:textSize="16sp"
+            android:paddingLeft="3dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_Bank_name"
+            android:layout_below="@+id/editText_account_no"
+            android:hint="Bank Name"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/custom_edittext"
+            android:layout_marginRight="50dp"
+            android:textSize="16sp"
+            android:paddingLeft="3dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_Branch_name"
+            android:layout_below="@+id/editText_Bank_name"
+            android:hint="Branch Name"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/custom_edittext"
+            android:layout_marginRight="50dp"
+            android:textSize="16sp"
+            android:paddingLeft="3dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_IFFC_Code"
+            android:layout_below="@+id/editText_Branch_name"
+            android:hint="IFFC Code"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/custom_edittext"
+            android:layout_marginRight="50dp"
+            android:textSize="16sp"
+            android:paddingLeft="3dp"
+            android:layout_marginBottom="20dp"/>
+
+    </RelativeLayout>
+</ScrollView>

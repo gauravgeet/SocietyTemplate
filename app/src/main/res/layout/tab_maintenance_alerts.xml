@@ -1,0 +1,110 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gaurav_pc.societytemplate.Alerts$PlaceholderFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout_maintenanceAlert"
+            android:orientation="vertical"
+            android:weightSum="5"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_maintenanceAlert_heading"
+                android:text="Set New Alert"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:layout_weight="1"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_maintenanceAlert"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_maintenanceAlert_Date"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:hint="Alert Date"
+                android:paddingLeft="3dp"
+                android:paddingBottom="5dp"
+                android:drawableLeft="@drawable/calendar_20"
+                android:drawablePadding="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_maintenanceAlert_Time"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:hint="Alert Time"
+                android:paddingLeft="3dp"
+                android:paddingBottom="5dp"
+                android:drawableLeft="@drawable/alarm_clock_20"
+                android:drawablePadding="10dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_setMaintenanceAlert"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="20dp"
+                android:text="Set Alert"
+                android:textColor="#fff"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_preMaintenanceAlertList"
+            android:text="Alerts"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/linearLayout_maintenanceAlert"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"/>
+
+        <View
+            android:id="@+id/view_maintenanceAlerts"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/linearLayout_maintenanceAlert"
+            android:layout_toEndOf="@+id/textView_preMaintenanceAlertList"
+            android:layout_marginTop="30dp"
+            android:background="#c0c0c0"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"/>
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listView_maintenanceAlerts"
+            android:layout_below="@+id/view_maintenanceAlerts"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+
+</ScrollView>

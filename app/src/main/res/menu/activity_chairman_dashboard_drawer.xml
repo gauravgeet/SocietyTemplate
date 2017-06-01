@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_accounts"
+            android:icon="@drawable/rupee_20"
+            android:title="Accounts" />
+
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/advertising_20"
+            android:title="Notifications" />
+
+        <item
+            android:id="@+id/nav_reports"
+            android:icon="@drawable/report_20"
+            android:title="Reports" />
+
+        <item
+            android:id="@+id/nav_complaints"
+            android:icon="@drawable/strike_20"
+            android:title="Complaints" />
+
+        <item
+            android:id="@+id/nav_alters"
+            android:icon="@drawable/alarm_clock_20"
+            android:title="Alerts" />
+
+        <item
+            android:id="@+id/nav_uploads"
+            android:icon="@drawable/upload_20"
+            android:title="Uploads" />
+
+
+        <item
+            android:id="@+id/nav_polls"
+            android:icon="@drawable/elections_20"
+            android:title="Opinion Polls " />
+
+        <item
+            android:id="@+id/nav_scheduler"
+            android:icon="@drawable/calendar_20"
+            android:title="Scheduler" />
+
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@drawable/phone_30"
+            android:title="Important Contacts" />
+
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_Profile"
+                android:icon="@drawable/profile_20"
+                android:title="Profile" />
+            <item
+                android:id="@+id/nav_signout"
+                android:icon="@drawable/signout_20"
+                android:title="Sign Out" />
+        </menu>
+    </item>
+
+</menu>

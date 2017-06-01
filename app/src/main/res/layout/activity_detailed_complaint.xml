@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:id="@+id/textView_Complaint_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:inputType="textMultiLine"
+        android:text="Complaints Subject will appear here.."
+        android:textSize="20sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+    android:id="@+id/textView_from"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_below="@+id/textView_Complaint_title"
+    android:layout_marginTop="10dp"
+    android:text="From :"
+    android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView_from1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView_from"
+        android:layout_alignTop="@+id/textView_from"
+        android:layout_toEndOf="@+id/textView_from"
+        android:inputType="textMultiLine"
+        android:text="Flat No 1004"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        android:layout_marginLeft="3dp"/>
+
+    <TextView
+        android:id="@+id/textView_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView_from"
+        android:layout_marginTop="10dp"
+        android:text="Complaint About :"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView_about1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView_about"
+        android:layout_alignTop="@+id/textView_about"
+        android:layout_toEndOf="@+id/textView_about"
+        android:inputType="textMultiLine"
+        android:text="Flat No 1008"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        android:layout_marginLeft="3dp"/>
+
+    <TextView
+        android:id="@+id/textView_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView_about"
+        android:layout_marginTop="10dp"
+        android:text="Date and Time :"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView_date1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView_date"
+        android:layout_alignTop="@+id/textView_date"
+        android:layout_toEndOf="@+id/textView_date"
+        android:inputType="textMultiLine"
+        android:text="3/12/2019:10:12am"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        android:layout_marginLeft="3dp"/>
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/textView_date"
+        android:layout_marginTop="10dp"
+        android:background="#c0c0c0" />
+
+
+    <Button
+        android:id="@+id/button_reply"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:text="Reply"
+        android:layout_below="@+id/scrollView"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"/>
+    <Button
+        android:id="@+id/button_take_action"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:text="Take Action"
+        android:layout_below="@+id/scrollView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_alignTop="@+id/view"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:inputType="textMultiLine"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu facilisis quam. Mauris euismod nibh et turpis malesuada pharetra. Suspendisse a magna augue. Proin tincidunt suscipit tristique. Nullam finibus risus felis. Maecenas at nunc neque. In hac habitasse platea dictumst. "
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

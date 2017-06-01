@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    tools:context="com.example.gaurav_pc.societytemplate.Signup">
+
+    <LinearLayout
+        android:id="@+id/activity_signup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_Signup_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:fontFamily="GTWalsheimProTrial"
+            android:text="Lets get started"
+            android:textAlignment="center"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/custom_edittext"
+            android:fontFamily="GTWalsheimProTrial"
+            android:hint="First Name"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/name_30"
+            android:textAlignment="center"
+            android:paddingBottom="7dp"/>
+
+        <EditText
+            android:id="@+id/editText_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_edittext"
+            android:fontFamily="GTWalsheimProTrial"
+            android:hint="Last Name"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/first_name_30"
+            android:textAlignment="center"
+            android:paddingBottom="7dp"/>
+
+        <EditText
+            android:id="@+id/editText_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_edittext"
+            android:fontFamily="GTWalsheimProTrial"
+            android:hint="Username"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:drawableLeft="@drawable/username_black_30"
+            android:textAlignment="center"
+            android:paddingBottom="7dp"/>
+
+        <EditText
+            android:id="@+id/editText_Rpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_edittext"
+            android:fontFamily="GTWalsheimProTrial"
+            android:hint="Password"
+            android:textSize="20sp"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/password_black"
+            android:textAlignment="center"
+            android:paddingBottom="7dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_confirm_password"
+            android:textAlignment="center"
+            android:background="@drawable/custom_edittext"
+            android:hint="Re-enter password"
+            android:textSize="20sp"
+            android:fontFamily="GTWalsheimProTrial"
+            android:drawableLeft="@drawable/checked_30"
+            android:layout_marginTop="30dp"
+            android:paddingBottom="7dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_email_id"
+            android:textAlignment="center"
+            android:background="@drawable/custom_edittext"
+            android:hint="Email Address"
+            android:textSize="20sp"
+            android:inputType="textEmailAddress"
+            android:drawableLeft="@drawable/message_30"
+            android:fontFamily="GTWalsheimProTrial"
+            android:layout_marginTop="30dp"
+            android:paddingBottom="7dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_phone_number"
+            android:inputType="phone"
+            android:textAlignment="center"
+            android:background="@drawable/custom_edittext"
+            android:hint="Contact Number"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/phone_30"
+            android:fontFamily="GTWalsheimProTrial"
+            android:layout_marginTop="30dp"
+            android:paddingBottom="7dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_flat_number"
+            android:textAlignment="center"
+            android:background="@drawable/custom_edittext"
+            android:hint="Flat Number"
+            android:textSize="20sp"
+            android:fontFamily="GTWalsheimProTrial"
+            android:drawableLeft="@drawable/home_30"
+            android:layout_marginTop="30dp"
+            android:paddingBottom="7dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_society_code"
+            android:textAlignment="center"
+            android:background="@drawable/custom_edittext"
+            android:hint="Society Code"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/building_30"
+            android:fontFamily="GTWalsheimProTrial"
+            android:layout_marginTop="30dp"
+            android:paddingBottom="7dp"/>
+
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:spinnerMode="dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_register"
+            android:text="Resister"
+            android:fontFamily="GTWalsheimProTrial"
+            android:background="#406280"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"/>
+
+
+    </LinearLayout>
+</ScrollView>
